@@ -1,0 +1,11 @@
+<h1>{{ getTitle() }}</h1>
+<p>{{ getCurrentDate() }}</p>
+<fieldset>
+<h2>Current Student is: {{myStudent}}</h2>
+<legend>Students: </legend>
+<ul>
+  <li *ngFor="let student of students">
+    {{ student }}
+  </li>
+</ul>
+</fieldset>
